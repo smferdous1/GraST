@@ -35,24 +35,24 @@ GrasT is a C++ implementation of some streaming graph algorithms. Currently, Gra
  ## k-disjoint Matching
 The streaming k-disjoint matching implementation are provided in the "kdm" branch. This implement two streaming algorithm from our following paper.
 
-   @InProceedings{ferdous_et_al:LIPIcs.ESA.2024.53,
-   author =	{Ferdous, S M and Samineni, Bhargav and Pothen, Alex and Halappanavar, Mahantesh and Krishnamoorthy, Bala},
-   title =	{{Semi-Streaming Algorithms for Weighted k-Disjoint Matchings}},
-   booktitle =	{32nd Annual European Symposium on Algorithms (ESA 2024)},
-   pages =	{53:1--53:19},
-   series =	{Leibniz International Proceedings in Informatics (LIPIcs)},
-   ISBN =	{978-3-95977-338-6},
-   ISSN =	{1868-8969},
-   year =	{2024},
-   volume =	{308},
-   editor =	{Chan, Timothy and Fischer, Johannes and Iacono, John and Herman, Grzegorz},
-   publisher =	{Schloss Dagstuhl -- Leibniz-Zentrum f{\"u}r Informatik},
-   address =	{Dagstuhl, Germany},
-   URL =		{https://drops.dagstuhl.de/entities/document/10.4230/LIPIcs.ESA.2024.53},
-   URN =		{urn:nbn:de:0030-drops-211245},
-   doi =		{10.4230/LIPIcs.ESA.2024.53},
-   annote =	{Keywords: Matchings, Semi-Streaming Algorithms, Approximation Algorithms}
-   }
+      @InProceedings{ferdous_et_al:LIPIcs.ESA.2024.53,
+      author =	{Ferdous, S M and Samineni, Bhargav and Pothen, Alex and Halappanavar, Mahantesh and Krishnamoorthy, Bala},
+      title =	{{Semi-Streaming Algorithms for Weighted k-Disjoint Matchings}},
+      booktitle =	{32nd Annual European Symposium on Algorithms (ESA 2024)},
+      pages =	{53:1--53:19},
+      series =	{Leibniz International Proceedings in Informatics (LIPIcs)},
+      ISBN =	{978-3-95977-338-6},
+      ISSN =	{1868-8969},
+      year =	{2024},
+      volume =	{308},
+      editor =	{Chan, Timothy and Fischer, Johannes and Iacono, John and Herman, Grzegorz},
+      publisher =	{Schloss Dagstuhl -- Leibniz-Zentrum f{\"u}r Informatik},
+      address =	{Dagstuhl, Germany},
+      URL =		{https://drops.dagstuhl.de/entities/document/10.4230/LIPIcs.ESA.2024.53},
+      URN =		{urn:nbn:de:0030-drops-211245},
+      doi =		{10.4230/LIPIcs.ESA.2024.53},
+      annote =	{Keywords: Matchings, Semi-Streaming Algorithms, Approximation Algorithms}
+      }
 
 We have two algorithms implementation here: i) primal-dual based method (**stk**) and ii) a b-matching reduction based method (**stkb**). The b-matching based method and the necessary codes are implemented by Bhargav Samineni. 
 
