@@ -19,6 +19,28 @@ target_compile_options(stmatch PRIVATE -O3 )
 target_link_libraries(stmatch PRIVATE gstream)
 target_include_directories(stmatch PRIVATE "${PROJECT_SOURCE_DIR}/include")
 
+#executable app_streamkmatch
+add_executable(stkmatch appStreamkMatch.cc)
+target_compile_features(stkmatch PRIVATE cxx_std_17)
+target_compile_options(stkmatch PRIVATE -O3 )
+target_link_libraries(stkmatch PRIVATE gstream)
+target_include_directories(stkmatch PRIVATE "${PROJECT_SOURCE_DIR}/include")
+
+#executable app_streamkDM
+add_executable(stkdm appStreamkDM.cc)
+target_compile_features(stkdm PRIVATE cxx_std_17)
+target_compile_options(stkdm PRIVATE -O3 )
+target_link_libraries(stkdm PRIVATE gstream)
+target_include_directories(stkdm PRIVATE "${PROJECT_SOURCE_DIR}/include")
+
+
+#executable app_streamkmatch
+add_executable(kstmatch appStreamkDMatch.cc)
+target_compile_features(kstmatch PRIVATE cxx_std_17)
+target_compile_options(kstmatch PRIVATE -O3 )
+target_link_libraries(kstmatch PRIVATE gstream)
+target_include_directories(kstmatch PRIVATE "${PROJECT_SOURCE_DIR}/include")
+
 #executable app_ldstreammatch
 add_executable(ldstmatch appLdStreamMatch.cc)
 target_compile_features(ldstmatch PRIVATE cxx_std_17)
@@ -33,6 +55,12 @@ target_compile_options(grdymatch PRIVATE -O3 )
 target_link_libraries(grdymatch PRIVATE gstream)
 target_include_directories(grdymatch PRIVATE "${PROJECT_SOURCE_DIR}/include")
 
+#executable app_dppath
+add_executable(dppath appDPPath.cc)
+target_compile_features(dppath PRIVATE cxx_std_17)
+target_compile_options(dppath PRIVATE -O3 )
+target_link_libraries(dppath PRIVATE gstream)
+target_include_directories(dppath PRIVATE "${PROJECT_SOURCE_DIR}/include")
 
 #executable app_stec
 add_executable(stec appStreamEC.cc)

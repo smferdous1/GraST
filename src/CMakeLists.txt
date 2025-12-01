@@ -2,7 +2,10 @@ set(HEADER_LIST
     "${PROJECT_SOURCE_DIR}/include/GraST/Graph.h"
     "${PROJECT_SOURCE_DIR}/include/GraST/StreamIn.h"
     "${PROJECT_SOURCE_DIR}/include/GraST/StreamMatch.h"
+    "${PROJECT_SOURCE_DIR}/include/GraST/StreamkMatch.h"
+    "${PROJECT_SOURCE_DIR}/include/GraST/StreamkDM.h"
     "${PROJECT_SOURCE_DIR}/include/GraST/Match.h"
+    "${PROJECT_SOURCE_DIR}/include/GraST/MisraGries.h"
     "${PROJECT_SOURCE_DIR}/include/GraST/Utility.h"
     )
 
@@ -10,12 +13,16 @@ set(HEADER_LIST
 add_library(gstream
   StreamIn.cc
   StreamMatch.cc
+  StreamkMatch.cc
+  StreamkDM.cc
+  dpPath.cc
   LdStreamMatch.cc
   StreamEC.cc
   ldMatchStandard.cc
   ldMatchTwoPhase.cc
   ldMatchTwoPhasePar.cc
   greedyMatch.cc
+  MisraGries.cc
   Utility.cc
   primalDualEC.cc
   ${HEADER_LIST}
